@@ -12,7 +12,8 @@
     <groupId>com.robert.vesta</groupId>
     <artifactId>vesta-server</artifactId>
     <version>0.0.1</version>
-    <name>vesta-server</name>
+    <name>vesta-server 把发号器服务通过Dubbo服务导出的项目</name>
+    <description>把发号器服务通过Dubbo服务导出的项目</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

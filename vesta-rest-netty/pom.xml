@@ -12,7 +12,8 @@
     <groupId>com.robert.vesta</groupId>
     <artifactId>vesta-rest-netty</artifactId>
     <version>0.0.1</version>
-    <name>vesta-rest-netty</name>
+    <name>vesta-rest-netty 通过Netty启动的rest模式</name>
+    <description>通过Netty启动的rest模式的法号器服务器</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

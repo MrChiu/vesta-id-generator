@@ -12,7 +12,8 @@
     <groupId>com.robert.vesta</groupId>
     <artifactId>vesta-intf</artifactId>
     <version>0.0.1</version>
-    <name>vesta-intf</name>
+    <name>vesta-intf 抽象出来的对外的接口</name>
+    <description>发号器抽象出来的对外的接口</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

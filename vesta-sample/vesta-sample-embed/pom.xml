@@ -11,7 +11,7 @@
     <groupId>com.robert.vesta</groupId>
     <artifactId>vesta-sample-embed</artifactId>
     <version>0.0.1</version>
-    <name>vesta-sample-embed</name>
+    <name>vesta-sample-embed 嵌入式发布模式使用示例</name>
     <url>http://maven.apache.org</url>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

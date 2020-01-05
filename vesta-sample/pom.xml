@@ -14,8 +14,8 @@
     <artifactId>vesta-sample</artifactId>
     <version>0.0.1</version>
     <packaging>pom</packaging>
-
-    <name>vesta-sample</name>
+    <name>vesta-sample 使用示例</name>
+    <description>使用示例</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

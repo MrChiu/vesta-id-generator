@@ -12,7 +12,7 @@
     <groupId>com.robert.vesta</groupId>
     <artifactId>vesta-sample-client</artifactId>
     <version>0.0.1</version>
-    <name>vesta-sample-client</name>
+    <name>vesta-sample-client Dubbo服务部署模式</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -8,13 +8,14 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.2.3.RELEASE</version>
+        <version>1.5.12.RELEASE</version>
     </parent>
 
     <groupId>com.robert.vesta</groupId>
     <artifactId>vesta-rest</artifactId>
     <version>0.0.1</version>
-    <name>vesta-rest</name>
+    <name>vesta-rest 通过Spring Boot启动的rest模式</name>
+    <description>通过Spring Boot启动的rest模式的发号器服务器</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

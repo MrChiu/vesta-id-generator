@@ -12,7 +12,8 @@
     <groupId>com.robert.vesta</groupId>
     <artifactId>vesta-client</artifactId>
     <version>0.0.1</version>
-    <name>vesta-client</name>
+    <name>vesta-client 导入发号器Dubbo服务的客户端项目</name>
+    <description>导入发号器Dubbo服务的客户端项目</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
