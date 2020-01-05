@@ -18,16 +18,32 @@ public abstract class AbstractIdServiceImpl implements IdService {
 
     protected final Logger log = LoggerFactory.getLogger(this.getClass());
 
+    /**
+     * 机器ID
+     */
     protected long machineId = -1;
+    /**
+     * 生成方式
+     */
     protected long genMethod = 0;
+    /**
+     * 类型
+     */
     protected long type = 0;
+    /**
+     * 版本
+     */
     protected long version = 0;
 
     protected IdType idType;
     protected IdMeta idMeta;
-
+    /**
+     * ID转换器
+     */
     protected IdConverter idConverter;
-
+    /**
+     * 机器号提供
+     */
     protected MachineIdProvider machineIdProvider;
 
     public AbstractIdServiceImpl() {
@@ -86,6 +102,10 @@ public abstract class AbstractIdServiceImpl implements IdService {
         return ret;
     }
 
+    /**
+     * 继承实现，根据特定算法生成唯一ID的时间和序号属性
+     * @param id
+     */
     protected abstract void populateId(Id id);
 
     public Date transTime(final long time) {

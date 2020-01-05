@@ -8,9 +8,11 @@ import org.springframework.util.StringUtils;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 通过IP分配机器ID
+ */
 public class IpConfigurableMachineIdProvider implements MachineIdProvider {
-    private static final Logger log = LoggerFactory
-            .getLogger(IpConfigurableMachineIdProvider.class);
+    private static final Logger log = LoggerFactory.getLogger(IpConfigurableMachineIdProvider.class);
 
     private long machineId;
 
@@ -61,6 +63,7 @@ public class IpConfigurableMachineIdProvider implements MachineIdProvider {
         }
     }
 
+    @Override
     public long getMachineId() {
         return machineId;
     }

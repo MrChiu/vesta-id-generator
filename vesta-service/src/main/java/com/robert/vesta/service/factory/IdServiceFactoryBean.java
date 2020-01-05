@@ -14,8 +14,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import java.beans.PropertyVetoException;
 
 public class IdServiceFactoryBean implements FactoryBean<IdService> {
-    protected final Logger log = LoggerFactory
-            .getLogger(IdServiceFactoryBean.class);
+    protected final Logger log = LoggerFactory.getLogger(IdServiceFactoryBean.class);
 
     public enum Type {
         PROPERTY, IP_CONFIGURABLE, DB

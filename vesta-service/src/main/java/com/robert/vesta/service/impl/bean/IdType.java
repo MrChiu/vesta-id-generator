@@ -1,5 +1,8 @@
 package com.robert.vesta.service.impl.bean;
 
+/**
+ * 类型枚举
+ */
 public enum IdType {
     MAX_PEAK("max-peak"), MIN_GRANULARITY("min-granularity");
 

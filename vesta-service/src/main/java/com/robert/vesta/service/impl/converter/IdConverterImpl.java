@@ -20,6 +20,7 @@ public class IdConverterImpl implements IdConverter {
         this.idMeta = idMeta;
     }
 
+    @Override
     public long convert(Id id) {
         return doConvert(id, idMeta);
     }
@@ -42,6 +43,7 @@ public class IdConverterImpl implements IdConverter {
         return ret;
     }
 
+    @Override
     public Id convert(long id) {
         return doConvert(id, idMeta);
     }

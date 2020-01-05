@@ -9,19 +9,29 @@ import java.util.concurrent.atomic.AtomicReference;
 
 public class AtomicIdPopulator implements IdPopulator, ResetPopulator {
 
+    /**
+     * 定义联合数据结构
+     */
     class Variant {
-
         private long sequence = 0;
         private long lastTimestamp = -1;
-
     }
 
+    /**
+     * 通过原子变量引用
+     */
     private AtomicReference<Variant> variant = new AtomicReference<Variant>(new Variant());
 
     public AtomicIdPopulator() {
         super();
     }
 
+    /**
+     * CAS处理方式
+     * @param id
+     * @param idMeta
+     */
+    @Override
     public void populateId(Id id, IdMeta idMeta) {
         Variant varOld, varNew;
         long timestamp, sequence;
@@ -62,6 +72,7 @@ public class AtomicIdPopulator implements IdPopulator, ResetPopulator {
         }
     }
 
+    @Override
     public void reset() {
         variant = new AtomicReference<Variant>(new Variant());
     }

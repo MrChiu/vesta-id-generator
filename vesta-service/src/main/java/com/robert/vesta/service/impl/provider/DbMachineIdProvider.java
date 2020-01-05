@@ -7,9 +7,11 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.util.StringUtils;
 
+/**
+ * 通过数据库分配机器ID
+ */
 public class DbMachineIdProvider implements MachineIdProvider {
-    private static final Logger log = LoggerFactory
-            .getLogger(DbMachineIdProvider.class);
+    private static final Logger log = LoggerFactory.getLogger(DbMachineIdProvider.class);
 
     private long machineId;
 
@@ -84,6 +86,7 @@ public class DbMachineIdProvider implements MachineIdProvider {
         machineId = id;
     }
 
+    @Override
     public long getMachineId() {
         return machineId;
     }

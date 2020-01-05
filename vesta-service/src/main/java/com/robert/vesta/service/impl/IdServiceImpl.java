@@ -34,6 +34,9 @@ public class IdServiceImpl extends AbstractIdServiceImpl {
         initPopulator();
     }
 
+    /**
+     * 代理模式
+     */
     public void initPopulator() {
         if(idPopulator != null){
             log.info("The " + idPopulator.getClass().getCanonicalName() + " is used.");
@@ -49,6 +52,7 @@ public class IdServiceImpl extends AbstractIdServiceImpl {
         }
     }
 
+    @Override
     protected void populateId(Id id) {
         idPopulator.populateId(id, this.idMeta);
     }
